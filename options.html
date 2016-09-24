@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options</title>
+
+  <link rel="stylesheet" href="options.css" media="screen" title="no title">
+</head>
+<body>
+  <div class="center">
+    <label for="uri-to-add">URL:</label>
+    <input id="uri-to-add" type="text" pattern="https?://.+" title="Must have http:// or https:// {<= recomended}" placeholder="https://"></input>
+    <button id="save">Add</button>
+    <button id="addOrigin">Add current domain</button>
+
+    <!-- Template object for white list -->
+    <select id="url-list" size="5" multiple>
+    </select>
+
+    <button id="clear">Clear</button>
+    <button id="remove">Remove</button>
+
+    <script src="options.js"></script>
+  </div>
+</body>
+</html>
